@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,
+            maximum-scale=0.9,user-scaleable=0">
+        <meta charset="UTF-8">
+        <title>Chess</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div id="content">
+            <div id="chessBoardContainer">
+
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+        <script>
+            let chessBoard = new ChessBoard(chessBoardContainer)
+            chessBoard.createChessBoardForWhite()
+
+            let pawn = new Pawn(chessBoardContainer)
+            pawn.spawn("e3")
+            let pawn2 = new Pawn(chessBoardContainer)
+            pawn2.spawn("d2")
+            let pawn3 = new Pawn(chessBoardContainer)
+            pawn3.spawn("c1")
+        </script>
+    </body>
+</html>
